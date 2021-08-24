@@ -7,7 +7,7 @@ class Whether extends Component {
         country: "",
     }
     componentDidMount() {
-        fetch("http://api.openweathermap.org/data/2.5/weather?q=mumbai&appid=078d8ca7cd8ef72fe7bbf93d8063c59e&units=metric")
+        fetch("http://api.openweathermap.org/data/2.5/weather?q=mumbai&appid={ApiKey}&units=metric")
             .then((Response) => Response.json())
             .then((data) => {
                 console.log(data);
